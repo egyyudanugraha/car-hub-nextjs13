@@ -3,9 +3,7 @@
 import { ShowMoreProps } from '@/types';
 import { CustomButton } from '.';
 
-const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
-  console.log(isNext);
-  
+const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {  
 
   const handleNavigation = () => {
     const newLimit = (pageNumber + 1) * 10;

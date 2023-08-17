@@ -38,7 +38,6 @@ export default function Home() {
       console.log(error);
     } finally {
       setLoading(false);
-      console.log(limit, allCars.length);
     }
   }
 
