@@ -74,7 +74,7 @@ export default function Home() {
             {loading && (
               <div className='mt-16 w-full flex-center'>
                 <Image
-                  src="/infinity.svg"
+                  src="/loader.svg"
                   alt='loader'
                   width={100}
                   height={100}
