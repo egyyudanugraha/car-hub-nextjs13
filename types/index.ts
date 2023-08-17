@@ -10,9 +10,14 @@ export interface CustomButtonProps {
   isDisabled?: boolean;
 }
 
-export interface SearchManufacturerProps {
-  manufacturer: string;
+export interface SearchProps {
   setManufacturer: (manufacturer: string) => void;
+  setModel: (model: string) => void;
+}
+
+export interface SearchManufacturerProps {
+  selected: string;
+  setSelected: (manufacturer: string) => void;
 }
 
 export interface CarProps {
@@ -48,11 +53,12 @@ export interface OptionProps {
 }
 
 export interface CustomFilterProps {
-  title: string;
   options: OptionProps[];
+  setFilter: (filter: any) => void;
 }
 
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+  setLimit: (limit: number) => void;
 }
